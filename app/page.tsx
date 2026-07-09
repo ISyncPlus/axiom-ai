@@ -12,6 +12,7 @@ import Pricing from "@/components/templates/axis/pricing";
 import Footer from "@/components/templates/axis/footer";
 import Image from "next/image";
 import { ThemeToggle } from "@/components/templates/axis/theme-switch";
+import { Signature } from "@/components/ui/signature";
 
 const Page = () => {
   return (
@@ -43,6 +44,10 @@ const Page = () => {
           height={100}
           className="h-12 w-12 bg-muted-foreground/70 dark:bg-muted p-3 rounded-full grayscale"
         />
+        <div className="flex flex-row items-center justify-center gap-2 text-muted-foreground">
+            <span>Made with 💙 by</span>
+            <Signature text="Ebube Ezedimbu" fontUrl="/LastoriaBoldRegular.otf" fontSize={20} className="mt-1" color="white" />
+        </div>
         <ThemeToggle />
       </section>
     </div>

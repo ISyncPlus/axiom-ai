@@ -45,8 +45,8 @@ export default function ToolFeature() {
                     Works with all your favourite tools
                 </h2>
                 <p className="max-w-md text-sm text-muted-foreground sm:text-base">
-                    Axiom AI connects to the tools your team already uses—no
-                    migration required.
+                    Axiom AI connects to the tools your team already uses, with
+                    no migration required.
                 </p>
             </div>
 

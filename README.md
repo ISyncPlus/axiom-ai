@@ -1,21 +1,31 @@
-# Next.js template
+# Axiom AI
 
-This is a Next.js template with shadcn/ui.
+Axiom AI is an advanced platform template built with Next.js and shadcn/ui.
 
-## Adding components
+## Features
+- Dynamic hero section with animated blurred orb
+- Rich templates including Testimonials, Pricing, Features, and Tools
+- Full Dark/Light mode support with a theme switcher
+- Modern styling with Tailwind CSS and Framer Motion
 
-To add components to your app, run the following command:
+## Getting Started
+
+First, install the dependencies:
 
 ```bash
-npx shadcn@latest add button
+npm install
 ```
 
-This will place the ui components in the `components` directory.
+Then, run the development server:
 
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
+```bash
+npm run dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Tech Stack
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Framer Motion](https://www.framer.com/motion/)

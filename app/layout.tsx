@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Axiom AI — The AI Operating System for Modern Teams",
+  title: "Axiom AI | The AI Operating System for Modern Teams",
   description:
     "Automate repetitive work, organize knowledge, generate content, and collaborate seamlessly with AI-powered workflows designed for growing businesses.",
 };

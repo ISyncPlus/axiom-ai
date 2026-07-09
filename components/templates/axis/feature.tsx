@@ -40,7 +40,7 @@ const Feature = () => {
                     Axiom AI is designed for your team
                 </h2>
                 <p className="mt-4 text-sm text-muted-foreground sm:text-lg">
-                    Everything your team needs to work faster—powered by AI
+                    Everything your team needs to work faster, powered by AI
                 </p>
             </div>
 
@@ -128,7 +128,7 @@ const Feature = () => {
                         Axiom AI is designed for your team
                     </p>
                     <p className="text-center text-muted-foreground">
-                        Everything your team needs to work faster—powered by AI
+                        Everything your team needs to work faster, powered by AI
                     </p>
 
                     <div className="flex flex-col">

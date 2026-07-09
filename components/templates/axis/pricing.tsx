@@ -92,7 +92,7 @@ const Pricing = () => {
                             <div className="mt-8 border-t border-border/30 pt-6">
                                 <p className="text-sm leading-relaxed text-muted-foreground">
                                     Axiom AI is the AI operating system for modern teams.
-                                    Automate work, organize knowledge, and collaborate—all in
+                                    Automate work, organize knowledge, and collaborate, all in
                                     one AI-powered workspace. Companies using our platform
                                     include:
                                 </p>
