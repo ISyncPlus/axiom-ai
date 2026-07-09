@@ -13,8 +13,10 @@ import Footer from "@/components/templates/axis/footer";
 import Image from "next/image";
 import { ThemeToggle } from "@/components/templates/axis/theme-switch";
 import { Signature } from "@/components/ui/signature";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 const Page = () => {
+  const isMobile = useMediaQuery("(max-width: 640px)");
   return (
     <div className="relative px-4 py-6 mx-auto w-full overflow-hidden">
       <Navbar />
@@ -36,19 +38,27 @@ const Page = () => {
         <Pricing />
         <Footer />
       </div>
-      <section className="flex flex-row items-center justify-between gap-4 border-t border-border py-4 mx-4">
+      <section className="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-border py-4 mx-4">
         <Image
           src="/logo/templates/axis/discord.svg"
           alt="Discord Logo"
           width={100}
           height={100}
-          className="h-12 w-12 bg-muted-foreground/70 dark:bg-muted p-3 rounded-full grayscale"
+          className="h-12 w-12 bg-muted-foreground/70 dark:bg-muted p-3 rounded-full grayscale order-1 sm:order-0"
         />
-        <div className="flex flex-row items-center justify-center gap-2 text-muted-foreground">
-            <span>Made with 💙 by</span>
-            <Signature text="Ebube Ezedimbu" fontUrl="/LastoriaBoldRegular.otf" fontSize={20} className="mt-1" color="white" />
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-muted-foreground order-3 sm:order-0 text-center">
+            <span className="text-sm sm:text-base">Made with 💙 by</span>
+            <Signature
+              text="Ebube Ezedimbu"
+              fontUrl="/LastoriaBoldRegular.otf"
+              fontSize={isMobile ? 16 : 20}
+              className="mt-1"
+              color="currentColor"
+            />
         </div>
-        <ThemeToggle />
+        <div className="order-2 sm:order-0">
+          <ThemeToggle />
+        </div>
       </section>
     </div>
   );
