@@ -54,6 +54,7 @@ const Page = () => {
               fontSize={isMobile ? 16 : 20}
               className="mt-1"
               color="currentColor"
+              inView
             />
         </div>
         <div className="order-2 sm:order-0">
